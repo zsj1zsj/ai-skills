@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "sha256": {
+    "extensions/trip-plan.ts": "69d104f562f7ce8df8bdf4b9a6908ebec32fa99ee289cfdf868fab0516fe3457",
+    "agents/researcher.md": "759df4756b2ae0ac529327d568c7b932ecb169ca1fe31f2ee6148212813f72ee",
+    "agents/itinerary-synthesizer.md": "ac04dcc1420857fd36ff137bbf5f9ca0cd5ffc33e5a0ff214621b4b611d75784",
+    "agents/itinerary-critic.md": "582ce5cd8879fdecc7066480a70f9d9368b2415a85b0e4738d8f4e181d99a9eb",
+    "agents/itinerary-designer.md": "1971a44c028f3c796e546f9be6baeab4b607b0f695c768195ebbf4d3b50e5d17",
+    "agents/itinerary-generator.md": "358749770b4dc4a36fde7ca21f66a3676afc2bf2a86c0b3e663289b0a190a61a",
+    "skills/trip-plan/SKILL.md": "f3581795d486c046d89ae4e561cc89056d9669385ffd2820879d2f971e510ce8",
+    "skills/trip-plan/references/contracts.md": "e9721cf52cac1f99042dc2f4e841cc64b1e9c1d0a123745b9175e40a08e5d2a1",
+    "skills/trip-plan/scripts/acquire_images.py": "daea5635bc99906d25890b87dd9999008571392aede1a1c01475254159fc8397",
+    "skills/trip-plan/scripts/embed_images.py": "576a56ba5874e7601dad3c23943bd8add2963cef6967936d4b760c70726343b0",
+    "skills/trip-plan/scripts/image_assets.py": "7efa586e63c6c5bdeeca0dcb281685f53427b3d995e14ceff7bd72c62a7b600c",
+    "skills/trip-plan/scripts/validate_itinerary.py": "306531682b9170b1aec2f1fff3cae074f2239b4dbfa810dd139f0bb93b124fb9",
+    "skills/trip-plan/scripts/verify_report.py": "585ff594ecd4ea5dc395afd6ef148580fc17693741fe0c7e2a41dc8944771c59",
+    "skills/trip-plan/tests/questionnaire.mjs": "3840a1b309b95e7278e5017db337e7a767955286150e3db6e8b3ad4e328082a4",
+    "skills/trip-plan/tests/test_tripmedia.py": "8e0200af1563611f8e924a2f55e7390e77a09ba42565da036c7cf99d41c3113e",
+    "skills/trip-plan/tests/test_workflow.py": "7b4b9ea013f96aefa70548f90db0b2652ff36653755ed0492211e74aae242619"
+  }
+}

@@ -1,0 +1,27 @@
+--- a/pi-extension/subagents/terminal.ts
++++ b/pi-extension/subagents/terminal.ts
+@@ -1,6 +1,7 @@
+ import { mkdirSync, writeFileSync } from "node:fs";
+ import { tmpdir } from "node:os";
+ import { dirname, join } from "node:path";
++import { scriptLaunchCommand } from "./script-launch.ts";
+ import {
+ 	closeHerdrSurface,
+ 	createHerdrSurface,
+@@ -124,6 +125,7 @@
+ 			"pi-herdr-subagent-scripts",
+ 			`cmd-${Date.now()}-${Math.random().toString(16).slice(2, 8)}.sh`,
+ 		);
++	const launchCommand = scriptLaunchCommand(scriptPath);
+ 	mkdirSync(dirname(scriptPath), { recursive: true });
+ 
+ 	const scriptLines = ["#!/bin/bash"];
+@@ -132,7 +134,7 @@
+ 	scriptLines.push(command);
+ 	writeFileSync(scriptPath, `${scriptLines.join("\n")}\n`, { mode: 0o755 });
+ 
+-	runInPane(paneId, `bash ${shellQuote(scriptPath)}`);
++	runInPane(paneId, launchCommand);
+ 	return scriptPath;
+ }
+ 
